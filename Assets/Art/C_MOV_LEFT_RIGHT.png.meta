@@ -1,0 +1,355 @@
+fileFormatVersion: 2
+guid: f220effb7dd2f7c469605acba91b6f20
+timeCreated: 1513716560
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: C_MOV_LEFT_RIGHT_0
+    21300002: C_MOV_LEFT_RIGHT_1
+    21300004: C_MOV_LEFT_RIGHT_2
+    21300006: C_MOV_LEFT_RIGHT_3
+    21300008: C_MOV_LEFT_RIGHT_4
+    21300010: C_MOV_LEFT_RIGHT_5
+    21300012: C_MOV_LEFT_RIGHT_6
+    21300014: C_MOV_LEFT_RIGHT_7
+    21300016: C_MOV_LEFT_RIGHT_8
+    21300018: C_MOV_LEFT_RIGHT_9
+    21300020: C_MOV_LEFT_RIGHT_10
+    21300022: C_MOV_LEFT_RIGHT_11
+    21300024: C_MOV_LEFT_RIGHT_12
+    21300026: C_MOV_LEFT_RIGHT_13
+    21300028: C_MOV_LEFT_RIGHT_14
+    21300030: C_MOV_LEFT_RIGHT_15
+    21300032: C_MOV_LEFT_RIGHT_16
+    21300034: C_MOV_LEFT_RIGHT_17
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 16
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: C_MOV_LEFT_RIGHT_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 248
+        width: 161
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: C_MOV_LEFT_RIGHT_1
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 248
+        width: 162
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: C_MOV_LEFT_RIGHT_2
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 248
+        width: 163
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: C_MOV_LEFT_RIGHT_3
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 248
+        width: 162
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: C_MOV_LEFT_RIGHT_4
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 248
+        width: 163
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: C_MOV_LEFT_RIGHT_5
+      rect:
+        serializedVersion: 2
+        x: 1199
+        y: 248
+        width: 162
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: C_MOV_LEFT_RIGHT_6
+      rect:
+        serializedVersion: 2
+        x: 1439
+        y: 248
+        width: 163
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: C_MOV_LEFT_RIGHT_7
+      rect:
+        serializedVersion: 2
+        x: 1679
+        y: 248
+        width: 162
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: C_MOV_LEFT_RIGHT_8
+      rect:
+        serializedVersion: 2
+        x: 1919
+        y: 248
+        width: 162
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: C_MOV_LEFT_RIGHT_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 161
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: C_MOV_LEFT_RIGHT_10
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 0
+        width: 162
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: C_MOV_LEFT_RIGHT_11
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 0
+        width: 163
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: C_MOV_LEFT_RIGHT_12
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 0
+        width: 162
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: C_MOV_LEFT_RIGHT_13
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 0
+        width: 163
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: C_MOV_LEFT_RIGHT_14
+      rect:
+        serializedVersion: 2
+        x: 1199
+        y: 0
+        width: 162
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: C_MOV_LEFT_RIGHT_15
+      rect:
+        serializedVersion: 2
+        x: 1439
+        y: 0
+        width: 163
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: C_MOV_LEFT_RIGHT_16
+      rect:
+        serializedVersion: 2
+        x: 1679
+        y: 0
+        width: 162
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: C_MOV_LEFT_RIGHT_17
+      rect:
+        serializedVersion: 2
+        x: 1919
+        y: 0
+        width: 162
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
