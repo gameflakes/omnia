@@ -4,99 +4,109 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
 
-	public float moveSpeed;
-
-	private bool playerMoving;
-	public Vector2 lastMove;
+    [Header("Variável de movimentação")]
+    public float moveSpeed;
    
-	// Referência ao Animador do Player
+	[Header("Variável de animação")]
 	private Animator anim;
+    private bool playerMoving;
+    public Vector2 lastMove;
+
+    // Variável de colisão
     private Rigidbody2D playerRigidBody;
-
+    
+    [Header("Variável de Instância")]
     private static bool playerExists;
-
     public string startPoint;
 
 	// Use this for initialization
-	void Start () {		   
-
-		anim = GetComponent<Animator> ();
-        playerRigidBody = GetComponent < Rigidbody2D >();
+	void Start ()
+    {		   
+		anim = GetComponent <Animator> ();
+        playerRigidBody = GetComponent <Rigidbody2D> ();
 
         if (!playerExists)
         {
-
             playerExists = true;
             DontDestroyOnLoad(transform.gameObject);    
-
         }
         else
         {
-
-            Destroy(gameObject);
-
+            Destroy (gameObject);
         }
 
-      
-	}
-	
-	// Update is called once per frame
-	void Update () {
-
-		Movement ();
-
 	}
 
-	void Movement () {
+    // FixedUpdate é chamado a cada atualização da física da cena
+    private void FixedUpdate ()
+    {
+        Movement ();
+    }
 
+    // Update is called once per frame
+    void Update ()
+    {
+
+	}
+
+	void Movement ()
+    {
 		playerMoving = false;
 
-		// Movimentação horizontal
-		if(Input.GetAxisRaw("Horizontal") > 0.5f || Input.GetAxisRaw("Horizontal") < -0.5f )
-		{
+        float [] input = GetInput ();
 
-            //transform.Translate(new Vector3(Input.GetAxisRaw("Horizontal") * moveSpeed * Time.deltaTime, 0f, 0f));
-            playerRigidBody.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * moveSpeed, playerRigidBody.velocity.y);
-			playerMoving = true;
-			lastMove = new Vector2 (Input.GetAxisRaw ("Horizontal"), 0f);
+		// Movimentação horizontal
+		if (input[0] > 0.5f || input[0] < -0.5f)
+		{
+            playerRigidBody.velocity = new Vector2 (input[0] * moveSpeed, playerRigidBody.velocity.y);
+
+            playerMoving = true;
+			lastMove = new Vector2 (input[0], 0f);
 		}
 
 		// Movimentação vertical
-		if (Input.GetAxisRaw("Vertical") > 0.5f || Input.GetAxisRaw("Vertical") < -0.5f)
+		if (input[1] > 0.5f || input[1] < -0.5f)
 		{
+            playerRigidBody.velocity = new Vector2 (playerRigidBody.velocity.x, input[1] * moveSpeed);
 
-            //transform.Translate(new Vector3(0f, Input.GetAxisRaw("Vertical") * moveSpeed * Time.deltaTime, 0f));
-            playerRigidBody.velocity = new Vector2(playerRigidBody.velocity.x, Input.GetAxisRaw("Vertical") * moveSpeed);
             playerMoving = true;
-			lastMove = new Vector2 (0f, Input.GetAxisRaw ("Vertical"));
+			lastMove = new Vector2 (0f, input[1]);
 		}
 
         // Movimentação diagonal
-        if (Input.GetAxisRaw("Vertical") != 0 && Input.GetAxisRaw("Horizontal") != 0)
+        if (input[1] != 0 && input[0] != 0)
         {
-            playerRigidBody.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * moveSpeed / 1.357f, Input.GetAxisRaw("Vertical") * moveSpeed / 1.357f);
-            lastMove = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+            playerRigidBody.velocity = new Vector2 (input[0] * moveSpeed / 1.357f, input[1] * moveSpeed / 1.357f);
+
+            lastMove = new Vector2 (input[0], input[1]);
         }
 
 		// Reset velocidade se não aperta botão
-        if(Input.GetAxisRaw("Horizontal") < 0.5f && Input.GetAxisRaw("Horizontal") > -0.5f)
+        if (input[0] < 0.5f && input[0] > -0.5f)
         {
-            playerRigidBody.velocity = new Vector2(0f, playerRigidBody.velocity.y); 
+            playerRigidBody.velocity = new Vector2 (0f, playerRigidBody.velocity.y); 
         }
-        if (Input.GetAxisRaw("Vertical") < 0.5f && Input.GetAxisRaw("Vertical") > -0.5f)
+        if (input[1] < 0.5f && input[1] > -0.5f)
         {
-            playerRigidBody.velocity = new Vector2(playerRigidBody.velocity.x, 0f);
+            playerRigidBody.velocity = new Vector2 (playerRigidBody.velocity.x, 0f);
         }
 			
 
-        anim.SetFloat ("MoveX", Input.GetAxisRaw("Horizontal"));
-		anim.SetFloat ("MoveY", Input.GetAxisRaw ("Vertical"));
+        anim.SetFloat ("MoveX", input[0]);
+		anim.SetFloat ("MoveY", input[1]);
 
 		anim.SetBool ("PlayerMoving", playerMoving);
 
 		anim.SetFloat ("LastMoveX", lastMove.x);
 		anim.SetFloat ("LastMoveY", lastMove.y);
-
 	}
+
+    float [] GetInput ()
+    {
+        float hor = Input.GetAxisRaw ("Horizontal");
+        float ver = Input.GetAxisRaw ("Vertical");
+
+        return new float [] { hor, ver };
+    }
 
 }
