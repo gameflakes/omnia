@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Weapon
   layers:
   - Default
   - TransparentFX
@@ -13,8 +14,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - Ground
+  - GroundEntities
   - 
   - 
   - 
@@ -43,6 +44,12 @@ TagManager:
     locked: 0
   - name: Ground
     uniqueID: 3167061025
+    locked: 0
+  - name: Sea
+    uniqueID: 2857334757
+    locked: 0
+  - name: GroundEntities
+    uniqueID: 296747839
     locked: 0
   - name: Player
     uniqueID: 1035440393
